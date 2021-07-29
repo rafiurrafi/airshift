@@ -6536,6 +6536,12 @@ p {
 .text-size {
   font-size: 1.1rem; }
 
+.text-gray-dark {
+  color: #4a4a4a; }
+
+.text-gray-light {
+  color: #757575; }
+
 #mainNavbar .navbar-nav .nav-link {
   text-transform: uppercase;
   color: #4a4a4a;
