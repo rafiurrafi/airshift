@@ -6538,10 +6538,10 @@ p {
   border-radius: 50%; }
 
 .text-size {
-  font-size: 1rem; }
+  font-size: 1rem !important; }
 
 .text-gray-dark {
-  color: #4a4a4a; }
+  color: #474747; }
 
 .text-gray-light {
   color: #757575; }
@@ -6574,7 +6574,10 @@ p {
 #mainNavbar .navbar-nav .nav-link {
   text-transform: uppercase;
   color: #4a4a4a;
-  font-size: 0.9rem; }
+  font-size: 0.9rem;
+  transition: all 0.4s; }
+  #mainNavbar .navbar-nav .nav-link:hover {
+    color: #e42329; }
 #mainNavbar .navbar-brand img {
   width: 9rem; }
 
@@ -6772,9 +6775,14 @@ p {
   background-size: cover;
   padding: 3rem 2rem !important; }
 
+.section-track-input .form-control,
+.section-track-input .btn.w-25[type="submit"] {
+  font-size: 1rem; }
+
 .tracking-list-title,
 .tracking-list-title-name {
-  color: #4a4a4a; }
+  color: #4a4a4a;
+  font-family: "Roboto Slab", serif; }
 
 .tracking-list-title {
   font-size: 1.43rem; }
@@ -6811,7 +6819,7 @@ p {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/About/188433492_2687463748212994_4345649974138857625_n.jpg); }
 
 .section-about-desc p {
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: #757575; }
 
 .section-ceo-message {
@@ -6854,10 +6862,18 @@ p {
     border-width: 15px 15px 15px 15px;
     height: 0px;
     width: 0px; }
-  .tab-horizontal .nav-link img {
+  .tab-horizontal .nav-link.active .tab-icon-red {
+    display: none; }
+  .tab-horizontal .nav-link.active .tab-icon-white {
+    display: inline-block; }
+  .tab-horizontal .nav-link .tab-icon-red,
+  .tab-horizontal .nav-link .tab-icon-white {
     height: 1rem;
-    width: 1rem;
-    background-color: #fff; }
+    width: 1rem; }
+  .tab-horizontal .nav-link .tab-icon-red {
+    display: inline-block; }
+  .tab-horizontal .nav-link .tab-icon-white {
+    display: none; }
 
 .jumbotron-faq {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/FAQ/pexels-mart-production-7706586.jpg); }
