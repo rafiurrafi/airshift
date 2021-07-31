@@ -6697,74 +6697,6 @@ p {
 .quick-links a {
   color: #333; }
 
-@media (max-width: 992px) {
-  #mainNavbar .navbar-nav {
-    margin-left: 0%; }
-
-  .download-form {
-    padding: none; } }
-@media (max-width: 768px) {
-  .section-ceo-message .ceo-img {
-    height: 55vw; } }
-@media (max-width: 576px) {
-  .download-img {
-    padding-left: 1rem; }
-
-  .donwload-form .form-inline .form-control {
-    width: 100% !important; }
-
-  .donwload-form .btn.btn-primary.w-25 {
-    width: 50% !important; }
-
-  .donwload-form .form-control {
-    border-top-right-radius: 0.25rem;
-    border-bottom-right-radius: 0.25rem; }
-  .donwload-form .btn.btn-primary {
-    border-top-left-radius: 0.25rem;
-    border-bottom-left-radius: 0.25rem; }
-
-  .section-track-input .form-control {
-    width: 75% !important; } }
-@media (max-width: 575px) {
-  .section-works .nav {
-    flex-direction: row !important;
-    width: 100%; }
-    .section-works .nav a {
-      width: 24%; }
-      .section-works .nav a:not(:last-of-type) {
-        margin-right: 1%; } }
-@media (max-width: 1300px) {
-  .carousel-indicators {
-    left: -4% !important; } }
-@media (max-width: 1200px) {
-  .carousel-caption {
-    left: 21%;
-    width: 50%; } }
-@media (max-width: 1070px) {
-  .carousel-caption {
-    left: 22%;
-    width: 60%; } }
-@media (max-width: 960px) {
-  .carousel-caption {
-    left: 23%; } }
-@media (max-width: 890px) {
-  .carousel-caption {
-    left: 24%;
-    width: 75%; } }
-@media (max-width: 810px) {
-  .carousel-indicators {
-    display: none; }
-
-  .carousel-caption {
-    left: 10%;
-    width: 85%; }
-
-  .section-slides,
-  .caroursel,
-  .carousel-inner,
-  .carousel-item,
-  .carousel-item img {
-    height: 100vh; } }
 .jumbotron-tracking,
 .jumbotron-about,
 .jumbotron-blog,
@@ -6785,10 +6717,10 @@ p {
   font-family: "Roboto Slab", serif; }
 
 .tracking-list-title {
-  font-size: 1.43rem; }
+  font-size: 1.2rem; }
 
 .tracking-list-title-name {
-  font-size: 1.6rem; }
+  font-size: 1.4rem; }
   .tracking-list-title-name img {
     display: inline-block;
     height: 3rem;
@@ -6820,7 +6752,8 @@ p {
 
 .section-about-desc p {
   font-size: 1rem;
-  color: #757575; }
+  color: #757575;
+  font-family: "Roboto", sans-serif; }
 
 .section-ceo-message {
   background-image: url(../assets/About/bg-map.jpg);
@@ -6935,5 +6868,85 @@ p {
     display: inline-block; }
     .share-posts a.bg-gray {
       background-color: #4a4a4a; }
+
+@media (max-width: 992px) {
+  #mainNavbar .navbar-nav {
+    margin-left: 0%; }
+
+  .download-form {
+    padding: none; } }
+@media (max-width: 768px) {
+  .section-ceo-message .ceo-img {
+    height: 55vw; }
+
+  .tab-horizontal .nav-item {
+    width: 49%; }
+  .tab-horizontal .nav-link::after {
+    display: none; } }
+@media (max-width: 576px) {
+  .download-img {
+    padding-left: 1rem; }
+
+  .donwload-form .form-inline .form-control {
+    width: 100% !important; }
+
+  .donwload-form .btn.btn-primary.w-25 {
+    width: 50% !important; }
+
+  .donwload-form .form-control {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem; }
+  .donwload-form .btn.btn-primary {
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem; }
+
+  .section-track-input .form-control {
+    width: 75% !important; }
+
+  .tracking-list-title-name {
+    font-size: 1.15rem; }
+
+  .donwload-form .btn.btn-primary {
+    font-size: 1rem; } }
+@media (max-width: 575px) {
+  .section-works .nav {
+    flex-direction: row !important;
+    width: 100%; }
+    .section-works .nav a {
+      width: 24%; }
+      .section-works .nav a:not(:last-of-type) {
+        margin-right: 1%; } }
+@media (max-width: 1300px) {
+  .carousel-indicators {
+    left: -4% !important; } }
+@media (max-width: 1200px) {
+  .carousel-caption {
+    left: 21%;
+    width: 50%; } }
+@media (max-width: 1070px) {
+  .carousel-caption {
+    left: 22%;
+    width: 60%; } }
+@media (max-width: 960px) {
+  .carousel-caption {
+    left: 23%; } }
+@media (max-width: 890px) {
+  .carousel-caption {
+    left: 24%;
+    width: 75%; } }
+@media (max-width: 810px) {
+  .carousel-indicators {
+    display: none; }
+
+  .carousel-caption {
+    left: 10%;
+    width: 85%; }
+
+  .section-slides,
+  .caroursel,
+  .carousel-inner,
+  .carousel-item,
+  .carousel-item img {
+    height: 100vh; } }
 
 /*# sourceMappingURL=style.css.map */
