@@ -6893,6 +6893,8 @@ p {
 
 .help-heading {
   font-size: 1.3rem; }
+  .help-heading--border {
+    border-bottom: 1px solid #eee; }
 
 .help-box-inner {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
@@ -6903,6 +6905,12 @@ p {
 
 .jumbotron-location {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/Location/pexels-mart-production-7706476.jpg); }
+
+.location-store {
+  font-weight: 400; }
+.location-icon {
+  height: 1.5rem;
+  width: 1.5rem; }
 
 .jumbotron-blog {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/Blog/Image3.jpg); }
