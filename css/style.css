@@ -6543,6 +6543,9 @@ p {
 .text-small {
   font-size: 0.85rem; }
 
+.text-subheading {
+  font-size: 1.2rem; }
+
 .text-gray-dark {
   color: #474747; }
 
@@ -6750,7 +6753,8 @@ p {
 .jumbotron-blog,
 .jumbotron-faq,
 .jumbotron-help,
-.jumbotron-location {
+.jumbotron-location,
+.jumbotron-single {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/Tracking/pexels-mart-production-7706531.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -6954,7 +6958,7 @@ p {
   border-top-left-radius: 0rem;
   border-bottom-left-radius: 0rem; }
 
-.jumbotron-blog {
+.jumbotron-single {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/Blog/Image2.jpg); }
 
 .single-main-img {
@@ -6962,13 +6966,20 @@ p {
   height: 30vw;
   object-fit: cover; }
 
+.single-inner-img > div {
+  padding-left: 5px;
+  padding-right: 5px; }
 .single-inner-img img {
-  height: 200px;
+  height: 12.5rem;
   object-fit: cover; }
 
 .single-content {
   width: 97%;
   margin: 0 auto; }
+
+.single-paragraph {
+  font-size: 0.65rem;
+  font-weight: 400; }
 
 .share-posts {
   border-top: 2px solid #eee;
@@ -6977,9 +6988,14 @@ p {
     border-radius: 50%;
     height: 1.7rem;
     width: 1.7rem;
-    display: inline-block; }
+    line-height: 1.7rem;
+    vertical-align: middle;
+    display: inline-block;
+    transition: background-color 0.3s; }
     .share-posts a.bg-gray {
       background-color: #4a4a4a; }
+    .share-posts a:hover {
+      background-color: #e42329; }
 
 @media (max-width: 992px) {
   #mainNavbar .navbar-nav {
@@ -7015,7 +7031,10 @@ p {
   .tab-horizontal .nav-item {
     width: 49%; }
   .tab-horizontal .nav-link::after {
-    display: none; } }
+    display: none; }
+
+  .share-posts > div {
+    width: 75% !important; } }
 @media (max-width: 576px) {
   .section-track-input .form-control {
     width: 75% !important; }
@@ -7057,7 +7076,10 @@ p {
     .section-slides .slide-text .heading-main {
       font-size: 1.3rem; }
     .section-slides .slide-text .btn.btn-primary.btn-slide-sm {
-      font-size: 0.85rem; } }
+      font-size: 0.85rem; }
+
+  .share-posts > div {
+    width: 100% !important; } }
 @media (max-width: 575px) {
   .section-works .nav {
     flex-direction: row !important;
