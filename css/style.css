@@ -6590,6 +6590,18 @@ p {
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .iti__flag {
     background-image: url("../assets/flags.png"); } }
+.select-customize {
+  padding: 5px;
+  font-size: 16px;
+  line-height: 1;
+  border: 0;
+  border-radius: 5px;
+  height: 34px;
+  font-weight: 400;
+  background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #ddd;
+  -webkit-appearance: none;
+  background-position-x: 95%; }
+
 #mainNavbar .navbar-nav .nav-link {
   text-transform: uppercase;
   color: #4a4a4a;
@@ -6764,7 +6776,9 @@ p {
 .jumbotron-help,
 .jumbotron-location,
 .jumbotron-single,
-.jumbotron-offers {
+.jumbotron-offers,
+.jumbotron-store,
+.jumbotron-career {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/Tracking/pexels-mart-production-7706531.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -6969,6 +6983,27 @@ p {
 .rewards__box p {
   margin-bottom: 0; }
 
+.jumbotron-store {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/Services/pexels-liza-summer-6347560.jpg); }
+
+.section-store img {
+  width: 100%; }
+
+.jumbotron-career {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/Career/pexels-pavel-danilyuk-6443531.jpg); }
+
+.career-box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; }
+.career-box h3 {
+  font-size: 1.4rem; }
+  .career-box h3 span {
+    font-weight: 400 !important;
+    color: #9f9f9f; }
+.career-box__btn {
+  text-decoration: underline; }
+
 .jumbotron-blog {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/Blog/Image3.jpg); }
 
@@ -7083,7 +7118,13 @@ p {
     display: none; }
 
   .share-posts > div {
-    width: 75% !important; } }
+    width: 75% !important; }
+
+  .career-box img {
+    width: 100%;
+    object-fit: cover; }
+  .career-box__header h3 {
+    font-size: 1.2rem; } }
 @media (max-width: 576px) {
   .section-track-input .form-control {
     width: 75% !important; }
@@ -7128,7 +7169,10 @@ p {
       font-size: 0.85rem; }
 
   .share-posts > div {
-    width: 100% !important; } }
+    width: 100% !important; }
+
+  .career-box__header h3 {
+    font-size: 1.1rem; } }
 @media (max-width: 575px) {
   .section-works .nav {
     flex-direction: row !important;
