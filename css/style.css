@@ -7010,6 +7010,11 @@ p {
 #product-desc-tab a.active {
   background-color: #e42329 !important; }
 
+.product-link__text {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .jumbotron-career {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/Career/pexels-pavel-danilyuk-6443531.jpg); }
 
@@ -7272,8 +7277,8 @@ p {
     font-size: 1.1rem; }
 
   .product-link__text {
-    font-size: 1.2rem;
-    transform: scaleX(1.15); } }
+    font-size: 1.1rem;
+    transform: scaleX(1.1); } }
 @media (max-width: 575px) {
   .section-works .nav {
     flex-direction: row !important;
@@ -7284,5 +7289,12 @@ p {
         margin-right: 1%; } }
 .product-description {
   line-height: 1.5; }
+
+@media (max-width: 400px) {
+  .product-size-color {
+    display: block !important; }
+
+  .cta-cart .row .col:first-of-type a {
+    margin-bottom: 0.5rem; } }
 
 /*# sourceMappingURL=style.css.map */
