@@ -7091,6 +7091,10 @@ p {
   background-color: #4a4a4a;
   border-radius: 50%; }
 
+.cart-success-text {
+  font-size: 1.6rem;
+  font-weight: 400; }
+
 .jumbotron-blog {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/Blog/Image3.jpg); }
 
@@ -7168,9 +7172,49 @@ p {
     .share-posts a:hover {
       background-color: #e42329; }
 
+.section-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2; }
+  .section-modal .modal-content {
+    top: 20%;
+    position: relative; }
+    .section-modal .modal-content__close {
+      position: absolute;
+      right: 5%;
+      top: 5%;
+      font-size: 1.5rem; }
+      .section-modal .modal-content__close:hover {
+        text-decoration: none; }
+    .section-modal .modal-content .modal-download-btn img {
+      height: 3rem; }
+  .section-modal .iti {
+    width: 70%; }
+  .section-modal .btn.btn-primary {
+    width: 30%;
+    font-size: 1.1rem; }
+  .section-modal #modal-telephone {
+    width: 100% !important; }
+
+.download-error-img img {
+  height: 3rem; }
+
+@keyframes openModalAnim {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 @media (max-width: 992px) {
   #mainNavbar .navbar-nav {
-    margin-left: 0%; } }
+    margin-left: 0%; }
+
+  .modal-content {
+    width: 75% !important; } }
 @media (max-width: 768px) {
   .section-slides .mySlides .slide-controls {
     flex-direction: row !important;
@@ -7228,7 +7272,10 @@ p {
       transform: scaleX(1); }
 
   .cta-cart .btn.btn-primary {
-    font-size: 0.9rem; } }
+    font-size: 0.9rem; }
+
+  .modal-content {
+    width: 85%; } }
 @media (max-width: 576px) {
   .section-track-input .form-control {
     width: 71% !important; }
@@ -7237,6 +7284,16 @@ p {
 
   .tracking-list-title-name {
     font-size: 1.15rem; }
+
+  .section-track-input .form-inline .form-control {
+    font-size: 1rem; }
+
+  .section-track-input .btn.btn-primary[type="submit"] {
+    font-size: 1rem; }
+
+  .tracking-error-img {
+    height: 80px;
+    width: 80px; }
 
   .quick-links {
     font-size: 0.9rem; }
@@ -7286,6 +7343,20 @@ p {
   .product-link__text {
     font-size: 1.1rem;
     transform: scaleX(1.1); } }
+@media (max-width: 600px) {
+  .modal-content {
+    width: 95% !important;
+    margin-left: 2.5%; }
+    .modal-content .iti {
+      width: 60%; }
+    .modal-content .btn.btn-primary {
+      width: 40%;
+      font-size: 1rem; }
+    .modal-content .download-img {
+      height: 2.5rem !important; }
+
+  .download-error-img img {
+    height: 2.5rem !important; } }
 @media (max-width: 575px) {
   .section-works .nav {
     flex-direction: row !important;
