@@ -71,8 +71,8 @@
       </div>
     </nav>
     <div class="jumbotron jumbotron-cart text-center text-white">
-      <h1 class="display-4 font-weight-bold mb-3">Cart</h1>
-      <p class="text-white">Home - Cart</p>
+      <h1 class="display-4 font-weight-bold mb-3">Review</h1>
+      <p class="text-white">Home - Review</p>
     </div>
     <!-- Internaation input with flg -->
     <!-- <input type="tel" id="phone" /> -->
@@ -144,8 +144,8 @@
                   "
                 >
                   <a href="" class="active"></a>
-                  <a href=""></a>
-                  <a href=""></a>
+                  <a href="" class="active"></a>
+                  <a href="" class="active"></a>
                   <a href=""></a>
                 </div>
               </div>
@@ -174,203 +174,141 @@
         <section class="section-shopping-list">
           <div class="row my-3 my-lg-5">
             <div class="col-lg-8 mb-4 mb-lg-0">
-              <h3
-                class="help-heading pb-3 pb-md-4 font-weight-bold mb-3 mb-md-4"
+              <!-- Accordion here  -->
+              <div id="review-delivery-accordion ">
+                <div class="card checkout-card pr-lg-5 mb-3 mb-lg-5">
+                  <div class="card-header checkout-card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button
+                        class="
+                          btn btn-link
+                          d-flex
+                          justify-content-between
+                          align-items-center
+                          w-100
+                          px-0
+                        "
+                        data-toggle="collapse"
+                        data-target="#reviewDelCollapse"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        <span>Delivery Address</span>
+                        <span><i class="fa fa-plus"></i></span>
+                      </button>
+                    </h5>
+                  </div>
+
+                  <div
+                    id="reviewDelCollapse"
+                    class="collapse show"
+                    aria-labelledby="headingOne"
+                    data-parent="#review-delivery-accordion"
+                  >
+                    <div
+                      class="
+                        card-body
+                        px-2 px-md-3 px-lg-5
+                        bg-light
+                        mt-3
+                        d-flex
+                      "
+                    >
+                      <div class="mr-3 checkout-location">
+                        <img src="assets/Others icon/address icon.png" alt="" />
+                      </div>
+                      <div class="mr-auto">
+                        <h3 class="font-weight-bold">Dhaka Bangladesh</h3>
+                        <small class="text-gray-light-2 mb-2 d-inline-block"
+                          ><b>Adam Smith</b></small
+                        >
+                        <p class="mb-2">
+                          2369 Lauren Drive, Beloit, WI, Wisconsin, abcd
+                        </p>
+                        <p class="mb-2">Phone: 880-365-7693</p>
+                      </div>
+                      <div>
+                        <a href="#" class="checkout-edit text-center">
+                          <i class="fa fa-pencil"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion end here -->
+
+              <!-- Accordion here  -->
+              <div id="review-shipping-accordion">
+                <div class="card checkout-card pr-lg-5">
+                  <div class="card-header checkout-card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button
+                        class="
+                          btn btn-link
+                          d-flex
+                          justify-content-between
+                          align-items-center
+                          w-100
+                          px-0
+                        "
+                        data-toggle="collapse"
+                        data-target="#shippingReviewCollapse"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        <span>Shipping address</span>
+                        <span><i class="fa fa-plus"></i></span>
+                      </button>
+                    </h5>
+                  </div>
+
+                  <div
+                    id="shippingReviewCollapse"
+                    class="collapse show"
+                    aria-labelledby="headingOne"
+                    data-parent="#review-shipping-accordion"
+                  >
+                    <div class="card-body px-2 px-md-3 px-lg-5 mt-3 d-flex">
+                      <div class="mr-3 checkout-location">
+                        <img src="assets/Others icon/address icon.png" alt="" />
+                      </div>
+                      <div class="mr-auto">
+                        <p style="font-size: 1.2rem; font-weight: 400">
+                          Same as delivery address
+                        </p>
+                      </div>
+                      <div>
+                        <a href="#" class="checkout-edit text-center">
+                          <i class="fa fa-pencil"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion end here -->
+              <div class="checkout-payment pr-lg-5 py-3">
+                <h3 class="font-weight-bold pb-2 pb-md-3">Payment</h3>
+                <a href="#" class="text-uppercase d-block my-2 my-md-3"
+                  >SslCommerz
+                  <span class="ml-2 ml-md-3"
+                    ><i class="fa fa-angle-right"></i></span
+                ></a>
+                <a href="#" class="d-block"
+                  >Paypal
+                  <span class="ml-2 ml-md-3"
+                    ><i class="fa fa-angle-right"></i></span
+                ></a>
+              </div>
+              <a
+                href="#"
+                class="btn btn-lg btn-primary text-uppercase my-3 my-lg-5"
+                >Pay now</a
               >
-                Shopping Cart
-              </h3>
-              <div class="shopping-list__single mb-3">
-                <div class="row align-items-center py-3">
-                  <div class="col-1 text-center text-gray-dark">
-                    <a
-                      href="#"
-                      class="
-                        shopping-list__close
-                        d-inline-block
-                        text-subheading
-                        font-weight-bold
-                      "
-                      >X</a
-                    >
-                  </div>
-                  <div class="col-4 col-md-2 mb-3 mb-md-0">
-                    <img
-                      src="assets/store/Rectangle - 1.png"
-                      alt=""
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div
-                    class="
-                      col-6 col-md-4
-                      font-weight-bold
-                      text-center
-                      mb-3 mb-md-0
-                    "
-                  >
-                    Airshipt Mug ($59)
-                  </div>
-                  <!-- Quality reusable section  -->
-                  <div
-                    class="
-                      col-5 col-md-3
-                      bg-light
-                      d-flex
-                      justify-content-between
-                      py-3
-                      ml-2 ml-sm-0
-                    "
-                  >
-                    <div>Quality</div>
-                    <div>
-                      <a
-                        href="javascript:void(0)"
-                        class="mr-1 text-gray-dark"
-                        onclick="handleProductQuantity('product-1', 'dec')"
-                        ><i class="fa fa-caret-left"></i></a
-                      ><span id="product-1">1</span
-                      ><a
-                        href="javascript:void(0)"
-                        class="ml-1 text-gray-dark"
-                        onclick="handleProductQuantity('product-1', 'inc')"
-                        ><i class="fa fa-caret-right"></i
-                      ></a>
-                    </div>
-                  </div>
-                  <div class="col-5 col-md-2 text-center text-lg-left">
-                    $116
-                  </div>
-                </div>
-              </div>
-              <div class="shopping-list__single mb-3">
-                <div class="row align-items-center py-3">
-                  <div class="col-1 text-center text-gray-dark">
-                    <a
-                      href="#"
-                      class="
-                        shopping-list__close
-                        d-inline-block
-                        text-subheading
-                        font-weight-bold
-                      "
-                      >X</a
-                    >
-                  </div>
-                  <div class="col-4 col-md-2 mb-3 mb-md-0">
-                    <img
-                      src="assets/store/Rectangle - 1.png"
-                      alt=""
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div
-                    class="
-                      col-6 col-md-4
-                      font-weight-bold
-                      text-center
-                      mb-3 mb-md-0
-                    "
-                  >
-                    Airshipt Mug ($59)
-                  </div>
-                  <!-- Quality reusable section  -->
-                  <div
-                    class="
-                      col-5 col-md-3
-                      bg-light
-                      d-flex
-                      justify-content-between
-                      py-3
-                      ml-2 ml-sm-0
-                    "
-                  >
-                    <div>Quality</div>
-                    <div>
-                      <a
-                        href="javascript:void(0)"
-                        class="mr-1 text-gray-dark"
-                        onclick="handleProductQuantity('product-2', 'dec')"
-                        ><i class="fa fa-caret-left"></i></a
-                      ><span id="product-2">1</span
-                      ><a
-                        href="javascript:void(0)"
-                        class="ml-1 text-gray-dark"
-                        onclick="handleProductQuantity('product-2', 'inc')"
-                        ><i class="fa fa-caret-right"></i
-                      ></a>
-                    </div>
-                  </div>
-                  <div class="col-5 col-md-2 text-center text-lg-left">
-                    $116
-                  </div>
-                </div>
-              </div>
-              <div class="shopping-list__single mb-3">
-                <div class="row align-items-center py-3">
-                  <div class="col-1 text-center text-gray-dark">
-                    <a
-                      href="#"
-                      class="
-                        shopping-list__close
-                        d-inline-block
-                        text-subheading
-                        font-weight-bold
-                      "
-                      >X</a
-                    >
-                  </div>
-                  <div class="col-4 col-md-2 mb-3 mb-md-0">
-                    <img
-                      src="assets/store/Rectangle - 1.png"
-                      alt=""
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div
-                    class="
-                      col-6 col-md-4
-                      font-weight-bold
-                      text-center
-                      mb-3 mb-md-0
-                    "
-                  >
-                    Airshipt Mug ($59)
-                  </div>
-                  <!-- Quality reusable section  -->
-                  <div
-                    class="
-                      col-5 col-md-3
-                      bg-light
-                      d-flex
-                      justify-content-between
-                      py-3
-                      ml-2 ml-sm-0
-                    "
-                  >
-                    <div>Quality</div>
-                    <div>
-                      <a
-                        href="javascript:void(0)"
-                        class="mr-1 text-gray-dark"
-                        onclick="handleProductQuantity('product-3', 'dec')"
-                        ><i class="fa fa-caret-left"></i></a
-                      ><span id="product-3">1</span
-                      ><a
-                        href="javascript:void(0)"
-                        class="ml-1 text-gray-dark"
-                        onclick="handleProductQuantity('product-3', 'inc')"
-                        ><i class="fa fa-caret-right"></i
-                      ></a>
-                    </div>
-                  </div>
-                  <div class="col-5 col-md-2 text-center text-lg-left">
-                    $116
-                  </div>
-                </div>
-              </div>
             </div>
             <!-- Shopping calculation  -->
-            <div class="col-lg-4">
+            <div class="col-lg-4 mt-5 mt-lg-0">
               <!-- Cart total  -->
               <h2
                 class="help-heading font-weight-bold pb-3 pb-md-4 md-3 mb-md-4"
