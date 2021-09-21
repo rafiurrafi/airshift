@@ -6936,7 +6936,8 @@ p {
   color: #4a4a4a;
   font-size: 1rem;
   text-decoration: none;
-  white-space: normal; }
+  white-space: normal;
+  text-align: left; }
   .faq-link:hover {
     text-decoration: none;
     color: #e42329; }
